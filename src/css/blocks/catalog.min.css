@@ -1,0 +1,1 @@
+.catalog{padding:0 0 100px 0}.catalog__tabs{display:flex;margin-top:70px;list-style-type:none;justify-content:center;align-items:center}.catalog__tab{width:220px;height:50px;border:2px solid #d0d0d0;font-size:18px;font-weight:400;text-transform:uppercase;color:#6b6b6b;text-align:center;line-height:48px;transform:skewX(-25deg);margin:0 5px}.catalog__tab div{transform:skewX(25deg)}

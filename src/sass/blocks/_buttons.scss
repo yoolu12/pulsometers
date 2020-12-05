@@ -33,4 +33,15 @@
         text-transform: uppercase;
         cursor: pointer;
     }
+    &_mini {
+        width: 131px;
+        height: 40px;
+        font-size: 14px;
+        &:hover {
+            background-color: $main-color;
+            color: #ffffff;
+            width: 133px;
+            height: 42px;
+        }
+    }
 }
