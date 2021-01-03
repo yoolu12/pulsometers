@@ -45,6 +45,17 @@
         
         }
     }
+    .reviews {
+        &__items {
+            max-width: 90%;
+        }
+        &__item {
+            img {
+                margin-right: 45px;
+                margin-left: 15px;
+            }
+        }
+    }
 
 }
 @media (max-width: 767px) {
