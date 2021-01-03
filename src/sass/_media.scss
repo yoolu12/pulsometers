@@ -13,6 +13,39 @@
             align-items: center;
         }
     }
+    .consultation {
+        min-height: 600px;
+        padding-top: 60px;
+        .title_left {
+            font-size: 30px;
+            text-align: center;
+        }
+        &__desc {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .feed-form {
+            display: flex;
+            width: 400px;
+            margin: 0 auto;
+            margin-top: 60px;
+            .button_submit{
+                width: 100%;
+                margin-top: 35px;
+            }
+        }
+    }
+    .carousel {
+        padding-bottom: 60px;
+    }
+    .catalog {
+        padding-bottom: 50px;
+        &__content {
+            justify-content:space-around;
+        
+        }
+    }
+
 }
 @media (max-width: 767px) {
     .header {
