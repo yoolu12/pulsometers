@@ -53,8 +53,45 @@ $(document).ready(function(){
   $('.button_mini').each(function(i) {
     $(this).on('click', function() {
       $('#order .modal__desc').text($('.catalog-item__subtitle').eq(i).text());
-      $('.overlay, #order').fadeIn('fast');
+      $('.overlay, #order').fadeIn('fast'); 
     })
   });
+
+  //VALIDATION
+
+    function validateForms(form) {
+    $(form).validate({
+      rules: {
+        name: {
+          required: true,
+          minlength: 2
+        },
+        phone: "required",
+        email: {
+          required: true,
+          email: true
+        }
+      },
+      messages: {
+        name: {
+          required: "Пожалуйста, введите свое имя",
+          minlength: jQuery.validator.format("Необходимо ввести не менее {0}-х символов!")
+        },
+        phone: "Пожалуйста, введите свой номер телефона",
+        email: {
+          required: "Нам нужен ваш email для связи с вами",
+          email: "Ваш email адрес должен быть формата name@domain.com"
+        }
+      }
+    });
+  }
+
+  validateForms('#consultation form');
+  validateForms('#consultation-form');
+  validateForms('#order form');
+
+  //MASK FOR PHONE
+
+  $('input[name=phone]').mask("+7 (999) 999-99-99");
 });
 
